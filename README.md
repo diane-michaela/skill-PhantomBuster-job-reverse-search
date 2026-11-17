@@ -15,23 +15,34 @@ Give Claude a job description, an intake brief or a list of skills. The skill:
 4. **Proposes a PhantomBuster chain** on the Product companies:
    LinkedIn Job Scraper → LinkedIn Company Employees Export → LinkedIn Profile Scraper.
 
-## Install
+## How to download and install the skill
 
-**In Claude (claude.ai or the desktop app)**
+### In Claude (claude.ai or the desktop app)
 
-1. Download `job-reversed-search.skill` from the
-   [latest release](../../releases/latest).
-2. In Claude, go to **Settings → Capabilities → Skills** and upload that file.
+1. **Download the skill file:**
+   [**job-reversed-search.skill**](https://github.com/diane-michaela/skill-PhantomBuster-job-reverse-search/releases/latest/download/job-reversed-search.skill)
+   (or open [Releases](https://github.com/diane-michaela/skill-PhantomBuster-job-reverse-search/releases/latest)
+   on the right of this page and click `job-reversed-search.skill` under **Assets**).
+   Why: this single file holds the whole skill, `SKILL.md`, the scripts and the query rules.
+   Do not download `SKILL.md` alone: the skill would miss its scripts.
+2. **Do not unzip it.** Keep the `.skill` file as it is.
+   Why: Claude expects the packed file and unpacks it itself.
+3. **In Claude, open Settings → Capabilities → Skills**, click **Upload skill** and pick the file.
+   Why: this is where Claude stores your own skills.
+4. **Check it is turned on** in the list of skills.
+   Why: an uploaded skill that is switched off never runs.
+5. If you had an older version of this skill, **remove it**.
+   Why: two versions with the same purpose compete, and Claude may pick the old one.
 
-That one file holds everything: `SKILL.md`, the scripts and the query rules.
-
-**In Claude Code**
+### In Claude Code
 
 ```
 git clone https://github.com/diane-michaela/skill-PhantomBuster-job-reverse-search.git ~/.claude/skills/job-reversed-search
 ```
 
-Update it later with `git pull` in that folder.
+Why: Claude Code reads skills from `~/.claude/skills/`, one folder per skill, and this repo is
+already laid out as that folder. To get a newer version later, run `git pull` inside
+`~/.claude/skills/job-reversed-search`.
 
 ## Use it
 

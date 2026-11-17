@@ -1,4 +1,4 @@
-<img width="4827" height="4827" alt="phantombuster (1)" src="https://github.com/user-attachments/assets/2bc83dc9-05c5-4143-b320-af90459cb675" />
+<img width="482" height="482" alt="phantombuster (1)" src="https://github.com/user-attachments/assets/2bc83dc9-05c5-4143-b320-af90459cb675" />
 
 
 # Job Reversed Search: a Claude skill
